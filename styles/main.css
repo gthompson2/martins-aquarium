@@ -1,0 +1,63 @@
+header { /* logo and page title */
+    display: flex;
+    margin-bottom: 25px;
+    position: sticky;
+    top: 0;
+    color: blue;
+    background-color: aqua;
+}
+
+body {
+    background-color: blue;
+}
+
+.logo {
+    height: 8em;
+}
+
+.title { /* move "Martin's Lil' Doodles" to a better spot relative to the logo*/
+    margin-left: 30px;
+    margin-top: 45px;
+}
+
+.content {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    margin-left: 1em;
+}
+
+.container {
+    border: 1px solid blue;
+}
+
+.container--left{
+    flex: 3;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+.container--right {
+    flex: 1;
+    background-color: aqua;
+}
+
+.fish__image {
+    height: 20em;
+}
+
+
+.location__image {
+    height: 8em;
+}
+
+.container--left article {
+    margin-bottom: 25px
+}
