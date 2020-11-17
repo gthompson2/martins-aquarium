@@ -6,11 +6,8 @@
  */
 
 const fishCollection = [
-    /*{
-        name: "Bart",
-        food: "crustaceans"
-    }, */
     {
+        image: "goldfish.jpg",
         name: "Tom",
         species: "Goldfish",
         length: 3,
@@ -18,6 +15,7 @@ const fishCollection = [
         diet: "Cheetos",
     },
     {
+        image: "angelfish.jpg",
         name: "Heather",
         species: "Angelfish",
         length: 5,
@@ -25,6 +23,7 @@ const fishCollection = [
         diet: "Cheez-its",
     },
     {
+        image: "Barracuda.jpg",
         name: "Bradley",
         species: "Barracuda",
         length: 36,
@@ -32,4 +31,15 @@ const fishCollection = [
         diet: "clownfish",
     }
 ]
+
+/**
+ * The below code returns the fishCollection array to the 
+ *  useFish function, then exports useFish() for use by another
+ *  file.
+ * 
+ *  export is sent to FishList.js
+ */
+export const useFish = () => {
+    return fishCollection.slice();
+}
     
