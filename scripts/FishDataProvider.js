@@ -6,9 +6,30 @@
  */
 
 const fishCollection = [
-    {
+    /*{
         name: "Bart",
         food: "crustaceans"
+    }, */
+    {
+        name: "Tom",
+        species: "Goldfish",
+        length: 3,
+        location: "Neighbor's Backyard Pond",
+        diet: "Cheetos",
+    },
+    {
+        name: "Heather",
+        species: "Angelfish",
+        length: 5,
+        location: "Neighbor's Backyard Pond",
+        diet: "Cheez-its",
+    },
+    {
+        name: "Bradley",
+        species: "Barracuda",
+        length: 36,
+        location: "Neighbor's Backyard Pond",
+        diet: "clownfish",
     }
 ]
-
+    
