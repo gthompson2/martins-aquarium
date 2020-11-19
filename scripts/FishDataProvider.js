@@ -18,7 +18,7 @@ const fishCollection = [
         image: "angelfish.jpg",
         name: "Heather",
         species: "Angelfish",
-        length: 5,
+        length: 15,
         location: "Neighbor's Backyard Pond",
         diet: "Cheez-its",
     },
@@ -26,9 +26,33 @@ const fishCollection = [
         image: "Barracuda.jpg",
         name: "Bradley",
         species: "Barracuda",
-        length: 36,
+        length: 75,
         location: "Neighbor's Backyard Pond",
         diet: "clownfish",
+    },
+    {
+        image: "marlin.jpg",
+        name: "Bob",
+        species: "Marlin",
+        length: 145,
+        location: "Neighbor's Backyard Pond",
+        diet: "Grapefruit",
+    },
+    {
+        image: "sailfish.jpg",
+        name: "Susan",
+        species: "Marlin",
+        length: 115,
+        location: "Neighbor's Backyard Pond",
+        diet: "Doritos",
+    },
+    {
+        image: "guppy.jpg",
+        name: "George",
+        species: "Guppy",
+        length: 2,
+        location: "Neighbor's Backyard Pond",
+        diet: "Porridge",
     }
 ]
 

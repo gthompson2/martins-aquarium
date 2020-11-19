@@ -1,13 +1,13 @@
 /**
- * get fish array from FishDataProvider.js
+ * get fish arrays from FishSorter.js
  * 
  * get function that turns objects into HTML elements from Fish.js
  */
-import {useFish} from './FishDataProvider.js'
-import { Fish } from './Fish.js'
+import { holyFish, soldiers, regularFish } from './sorting/fishSorter.js';
+import { Fish } from './Fish.js';
 
 /**
- * 
+ * Forgot what I was going to comment here...
  */
 export const FishList = () => {
 
@@ -25,7 +25,9 @@ export const FishList = () => {
      *  FishDataProvider.js, which is exported to this file
      *  using the function useFish()
      */
-    const allTheFish = useFish()
+    const allHolyFish = holyFish();
+	const allSoldierFish = soldiers();
+	const allUnworthyFish = regularFish();
 
     /**
      * Variable fishObj pulls objects from allTheFish one at a time.
@@ -34,7 +36,7 @@ export const FishList = () => {
      * get stored in the fishHTML variable.
      * 
      */
-    for (const fishObj of allTheFish) {
+    for (const fishObj of allHolyFish) {
         const fishHTML = Fish(fishObj); 
         /**  fishObj goes through Fish()
          *  before being assigned to  fishHTML
@@ -44,5 +46,19 @@ export const FishList = () => {
         contentElement.innerHTML += fishHTML
         
     }
+
+    // This is repetitive. Try to come up with a better way 
+    // to do this.
+    for (const fishObj of allSoldierFish) {
+        const fishHTML = Fish(fishObj);
+        contentElement.innerHTML += fishHTML;
+        
+    }
+
+    for (const fishObj of allUnworthyFish) {
+        const fishHTML = Fish(fishObj);
+        contentElement.innerHTML += fishHTML;
+        
+    }    
 
 }
